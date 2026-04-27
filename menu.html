@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Builder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+<h1 class="title">🍕 Build Your Pizza</h1>
+
+<div class="main">
+
+  <!-- LEFT SIDE -->
+  <div class="options">
+
+    <div class="box">
+      <h2>Size</h2>
+      <label><input type="radio" name="size" value="6"> Personal ($6)</label>
+      <label><input type="radio" name="size" value="10"> Medium ($10)</label>
+      <label><input type="radio" name="size" value="14"> Large ($14)</label>
+    </div>
+
+    <div class="box">
+      <h2>Toppings ($1 each)</h2>
+      <label><input type="checkbox" value="Pepperoni"> Pepperoni</label>
+      <label><input type="checkbox" value="Mushrooms"> Mushrooms</label>
+      <label><input type="checkbox" value="Onions"> Onions</label>
+      <label><input type="checkbox" value="Sausage"> Sausage</label>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="preview">
+    <img src="Image/pizza.jpg" alt="Pizza">
+    <button onclick="calculateTotal()">Place Order</button>
+  </div>
+
+</div>
+
+<!-- RECEIPT -->
+<div class="receipt" id="receipt"></div>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
